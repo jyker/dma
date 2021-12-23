@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "qvote"
+version = "0.1.0"
+description = "Quantified Truth Inference"
+authors = ["jyker <jyk.kongkong@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+pandas = "^1.3.3"
+scikit-learn = "^1.0"
+openpyxl = "^3.0.9"
+scipy = "^1.7.1"
+numpy = "^1.21.3"
+loguru = "^0.5.3"
+codetiming = "^1.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
