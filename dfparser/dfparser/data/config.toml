@@ -1,0 +1,122 @@
+title = "TRMA default config"
+
+[separator]
+# except 0-9 | a-z | A-Z |
+default = "[^0-9a-zA-Z ]"
+# except 0-9 | a-z | A-Z | - | \t
+avira = "[^0-9a-zA-Z- ]"
+tencent = "[^0-9a-zA-Z- ]"
+gdata = "[^0-9a-zA-Z- ]"
+eset-nod32 = "[^0-9a-zA-Z- ]"
+# except 0-9 | a-z | A-Z | \t
+avg = "[^0-9a-zA-Z ]"
+avast = "[^0-9a-zA-Z ]"
+avast5 = "[^0-9a-zA-Z ]"
+avast-mobile = "[^0-9a-zA-Z ]"
+# except 0-9 | a-z | A-Z | - | \t
+trendmicro = "[^0-9a-zA-Z ]"
+trendmicro-housecall = "[^0-9a-zA-Z ]"
+esafe = "[^0-9a-zA-Z- ]"
+f-secure = "[^0-9a-zA-Z- ]"
+antivir = "[^0-9a-zA-Z- ]"
+# except 0-9 | a-z | A-Z | _ | \t
+clamav = "[^0-9a-zA-Z_ ]"
+virobot = "[^0-9a-zA-Z_ ]"
+mcafee = "[^0-9a-zA-Z_ ]"
+mcafee-artemis = "[^0-9a-zA-Z_ ]"
+mcafee-gw-edition = "[^0-9a-zA-Z_ ]"
+mcafeebeta = "[^0-9a-zA-Z_ ]"
+# except 0-9 | a-z | A-Z | _
+sophos = "[^0-9a-zA-Z_]"
+panda = "[^0-9a-zA-Z_]"
+tachyon = "[^0-9a-zA-Z_]"
+sentinelone = "[^0-9a-zA-Z_]"
+k7antivirus = "[^0-9a-zA-Z_]"
+k7gw = "[^0-9a-zA-Z_]"
+yandex = "[^0-9a-zA-Z_]"
+invincea = "[^0-9a-zA-Z_]"
+jiangmin = "[^0-9a-zA-Z_]"
+cat-quickheal = "[^0-9a-zA-Z_]"
+# except 0-9 | a-z | A-Z
+cyren = "[^0-9a-zA-Z]"
+kingsoft = "[^0-9a-zA-Z]"
+ahnlab-v3 = "[^0-9a-zA-Z]"
+# except 0-9 | a-z | A-Z | -_
+microsoft = "[^0-9a-zA-Z-_]"
+
+[prefix]
+default = []
+invincea = ['+']
+sophos = ['+']
+superantispyware = ['Trojan.Agent/']
+
+[suffix]
+default = ['#', '(', '!', '@']
+
+[genlabel]
+default = [
+    'generickd',
+    'generic',
+    'gencirc',
+    'genric',
+    'genmalicious',
+    'generik',
+    'genetic',
+    'igeneric',
+    'confidence',
+    'tsgeneric',
+    'genericr',
+    'unsafe',
+    'genericpmf',
+    'genericri',
+    'malicious.',
+    'generic.mg.',
+    'artemis!',
+    'heur/qvm',
+    'malware.gen',
+    'malware@',
+    'troj_gen.',
+    'trojan.generic',
+    'malicious_confidence',
+    'suspect',
+    'malicious',
+    'suspicious',
+    'trojan.heur.',
+    'trojan.heur2.',
+    'trojan.malware.',
+    'trojan.packed.heur.',
+    'trojan.p2p-worm.',
+]
+
+[gentag]
+default = [
+    'static',
+    'high',
+    'undefined',
+    'gen',
+    'score',
+    'variant',
+    'infectedfile',
+    'avariantof',
+    'optional',
+    'risk',
+    'unclassified',
+    'mlwgen',
+    'symmi',
+    'agen',
+    'gen7'
+]
+drweb = ['origin']
+
+[genfamily]
+default = [
+    'agent',
+    'krap',
+    'symmi',
+    'injector',
+    'trojanaitinject',
+    'imeinject',
+    'vbinjectex',
+    'badfile',
+    'tiny'
+]
